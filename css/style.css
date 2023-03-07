@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header-sec{
+    background: url("image/bg.png");
+    height:100vh;
+    position: relative;
+
+}
+.header-sec::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(#000000bf, rgb(26 26 24 / 56%));
+    height: 100vh;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.nav-sec{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+.nav li{
+      list-style: none;
+      display: inline-block;
+      padding: 0 15px;
+      color:#fff;
+      text-transform: capitalize;
+      font-size: 20px;
+}
+.nav .active{
+    color:yellow;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 800;
+    color:#fff;
+
+}
+.logo .dot{
+    color:yellow;
+    font-size: 33px;
+
+}
+.nav li:hover{
+    transition: all 0.5s;
+    color:yellow;
+    cursor: pointer;
+}
+.btn button{
+    padding: 10px 20px;
+    border:1px solid yellow;
+    border-radius: 5px;
+    color:#fff;
+    background-color: transparent;
+    cursor: pointer;
+  
+    
+}
+.btn button:hover{
+    background-color: rgb(26, 26, 2);
+    color:#fff;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding-top:250px;
+}
+.container .title{
+    font-size: 60px;
+    text-align: center;
+    color:#fff;
+    font-weight: 800;
+    text-transform: capitalize;
+    
+}
+.container .content{
+    font-size: 40px;
+    color:#fff;
+    text-align: center;
+}
+.row{
+    display: flex;
+
+}
+.col{
+    width: 25%;
+    padding: 30px;
+    border:1px solid #fff;
+    margin: 10px;
+
+}
+.title .dot{
+    font-size: 60px;
+    color:yellow;
+   
+}
